@@ -11842,3 +11842,2083 @@ Processing by BugsController#index as HTML
 Completed 200 OK in 6791ms (Views: 6770.5ms | ActiveRecord: 4.9ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:25:03 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (27.0ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (24.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (151.0ms)
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:7
+  Rendered shared/_navbar.html.erb (45.9ms)
+  Rendered shared/_flashes.html.erb (3.7ms)
+Completed 200 OK in 558ms (Views: 431.8ms | ActiveRecord: 97.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:25:06 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.5ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (11.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:7
+  Rendered shared/_navbar.html.erb (3.8ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+Completed 200 OK in 136ms (Views: 127.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:25:46 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (1.1ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (46.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (30.0ms)
+  Rendered shared/_flashes.html.erb (3.3ms)
+Completed 200 OK in 549ms (Views: 520.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/bugs/2/edit" for 127.0.0.1 at 2019-03-05 02:25:50 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (7.5ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (26.0ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+Completed 200 OK in 149ms (Views: 104.1ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:25:57 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (4.1ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (14.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (31.6ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (4.0ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+Completed 200 OK in 180ms (Views: 150.6ms | ActiveRecord: 23.0ms)
+
+
+Started GET "/bugs/new" for 127.0.0.1 at 2019-03-05 02:26:00 +0100
+Processing by BugsController#new as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering bugs/new.html.erb within layouts/application
+  Rendered bugs/new.html.erb within layouts/application (19.1ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+Completed 200 OK in 168ms (Views: 134.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:26:02 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.5ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (12.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (3.8ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+Completed 200 OK in 139ms (Views: 131.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/bugs/2/edit" for 127.0.0.1 at 2019-03-05 02:26:04 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (7.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (2.2ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (7.7ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+Completed 200 OK in 123ms (Views: 101.5ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:26:09 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (58.8ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (86.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (3.6ms)
+  Rendered shared/_flashes.html.erb (1.1ms)
+Completed 200 OK in 233ms (Views: 164.2ms | ActiveRecord: 61.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:26:09 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.5ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (12.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (3.7ms)
+  Rendered shared/_flashes.html.erb (0.8ms)
+Completed 200 OK in 158ms (Views: 147.4ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:26:09 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.5ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (13.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (4.2ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+Completed 200 OK in 162ms (Views: 153.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:26:09 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (8.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (3.7ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+Completed 200 OK in 148ms (Views: 136.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:26:10 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (48.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (3.7ms)
+  Rendered shared/_flashes.html.erb (0.9ms)
+Completed 200 OK in 333ms (Views: 311.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:26:10 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (8.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (3.8ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+Completed 200 OK in 175ms (Views: 169.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:26:10 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (12.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (4.1ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+Completed 200 OK in 244ms (Views: 234.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:26:10 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (2.5ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (25.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (3.9ms)
+  Rendered shared/_flashes.html.erb (0.8ms)
+Completed 200 OK in 165ms (Views: 154.1ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:26:11 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (10.8ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (6.8ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+Completed 200 OK in 147ms (Views: 138.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/bugs/new" for 127.0.0.1 at 2019-03-05 02:26:12 +0100
+Processing by BugsController#new as HTML
+  [1m[36mUser Load (22.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering bugs/new.html.erb within layouts/application
+  Rendered bugs/new.html.erb within layouts/application (27.1ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+Completed 200 OK in 159ms (Views: 127.1ms | ActiveRecord: 22.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:26:13 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.5ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (14.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (2.9ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+Completed 200 OK in 109ms (Views: 99.6ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/bugs/1/edit" for 127.0.0.1 at 2019-03-05 02:26:16 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (2.7ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+Completed 200 OK in 88ms (Views: 74.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/bugs/1/edit" for 127.0.0.1 at 2019-03-05 02:27:26 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.5ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (38.1ms)
+  Rendered shared/_navbar.html.erb (3.1ms)
+  Rendered shared/_flashes.html.erb (5.5ms)
+Completed 200 OK in 281ms (Views: 229.3ms | ActiveRecord: 2.3ms)
+
+
+Started PATCH "/bugs/1" for 127.0.0.1 at 2019-03-05 02:35:16 +0100
+Processing by BugsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T+GAUDbx2y9H5C5iXTRe127P5eHsIzK9GC7lc64V/Gepr0txKl6yTYU42B4Do9PvinzexhJZKTcCdTny80/VcA==", "bug"=>{"user_id"=>"2", "state"=>"open"}, "commit"=>"Edit a bug", "id"=>"1"}
+  [1m[36mUser Load (13.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (2.9ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:30
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:31
+Redirected to http://localhost:3000/
+Completed 302 Found in 100ms (ActiveRecord: 35.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:35:16 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.9ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (16.2ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (9.6ms)
+  Rendered shared/_flashes.html.erb (1.0ms)
+Completed 200 OK in 323ms (Views: 313.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:49:35 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (39.4ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (25.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (158.1ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (8.8ms)
+  Rendered shared/_flashes.html.erb (1.5ms)
+Completed 200 OK in 526ms (Views: 377.4ms | ActiveRecord: 107.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 02:51:02 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (1.4ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (43.8ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (12.5ms)
+  Rendered shared/_flashes.html.erb (5.4ms)
+Completed 200 OK in 8416ms (Views: 8388.1ms | ActiveRecord: 4.0ms)
+
+
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7470688040319869505)[0m
+  ↳ bin/rails:9
+  [1m[35m (30.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddUrgencyOrderedToBugs (20190305015525)
+  [1m[35m (12.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (27.8ms)[0m  [1m[35mALTER TABLE "bugs" ADD "urgency_ordered" character varying[0m
+  ↳ db/migrate/20190305015525_add_urgency_ordered_to_bugs.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (4.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190305015525"]]
+  ↳ bin/rails:9
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (14.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(7470688040319869505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7470688040319869505)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddUrgencyOrderedToBugs (20190305015525)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (63.4ms)[0m  [1m[35mALTER TABLE "bugs" DROP COLUMN "urgency_ordered"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (6.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190305015525"]]
+  ↳ bin/rails:9
+  [1m[35m (17.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7470688040319869505)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7470688040319869505)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddSeverityToBugs (20190305015525)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.1ms)[0m  [1m[35mALTER TABLE "bugs" ADD "severity" character varying[0m
+  ↳ db/migrate/20190305015525_add_severity_to_bugs.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190305015525"]]
+  ↳ bin/rails:9
+  [1m[35m (12.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (13.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7470688040319869505)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/bugs/new" for 127.0.0.1 at 2019-03-05 03:05:40 +0100
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by BugsController#new as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from <class:Bug> at /Users/guellaty/code/emnaguel/study-test/app/models/bug.rb:4)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 22.3ms)
+
+
+  
+ArgumentError (The scope body needs to be callable.):
+  
+app/models/bug.rb:4:in `<class:Bug>'
+app/models/bug.rb:1:in `<main>'
+app/controllers/bugs_controller.rb:11:in `new'
+Started GET "/bugs/new" for 127.0.0.1 at 2019-03-05 03:07:31 +0100
+Processing by BugsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering bugs/new.html.erb within layouts/application
+  Rendered bugs/new.html.erb within layouts/application (33.1ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_flashes.html.erb (2.0ms)
+Completed 200 OK in 318ms (Views: 197.6ms | ActiveRecord: 22.4ms)
+
+
+Started GET "/bugs/new" for 127.0.0.1 at 2019-03-05 03:08:12 +0100
+Processing by BugsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering bugs/new.html.erb within layouts/application
+  Rendered bugs/new.html.erb within layouts/application (10.6ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+Completed 200 OK in 245ms (Views: 171.0ms | ActiveRecord: 11.0ms)
+
+
+Started POST "/bugs" for 127.0.0.1 at 2019-03-05 03:08:26 +0100
+Processing by BugsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d+mWNNiNtO7um+Jl5Tsgk4kmeFlOr21inzR3GjNJmtSRp10VxCLdjCxHFBm7rK2rbZVDfrDVduiFb6ubbhOzww==", "bug"=>{"title"=>"Test", "description"=>"Testons", "severity"=>"HIGH", "state"=>"open"}, "commit"=>"Add a bug"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Unpermitted parameter: :severity
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:19
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:19
+  [1m[36mBug Create (57.7ms)[0m  [1m[32mINSERT INTO "bugs" ("title", "description", "state", "created_at", "updated_at", "user_id", "owner_bug") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Test"], ["description", "Testons"], ["state", "open"], ["created_at", "2019-03-05 02:08:26.534503"], ["updated_at", "2019-03-05 02:08:26.534503"], ["user_id", 1], ["owner_bug", "emna"]]
+  ↳ app/controllers/bugs_controller.rb:19
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:19
+Redirected to http://localhost:3000/
+Completed 302 Found in 86ms (ActiveRecord: 61.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:08:26 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (20.7ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (36.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (4.2ms)
+  Rendered shared/_flashes.html.erb (0.8ms)
+Completed 200 OK in 337ms (Views: 310.1ms | ActiveRecord: 23.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:09:05 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.5ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (11.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (6.1ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+Completed 200 OK in 171ms (Views: 161.1ms | ActiveRecord: 3.3ms)
+
+
+  [1m[36mBug Load (2.0ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" ORDER BY "bugs"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:09:42 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.6ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (81.8ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (7.8ms)
+  Rendered shared/_flashes.html.erb (1.2ms)
+Completed 200 OK in 233ms (Views: 192.2ms | ActiveRecord: 20.3ms)
+
+
+Started GET "/bugs/new" for 127.0.0.1 at 2019-03-05 03:09:44 +0100
+Processing by BugsController#new as HTML
+  [1m[36mUser Load (14.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering bugs/new.html.erb within layouts/application
+  Rendered bugs/new.html.erb within layouts/application (22.1ms)
+  Rendered shared/_navbar.html.erb (3.0ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+Completed 200 OK in 158ms (Views: 132.2ms | ActiveRecord: 14.1ms)
+
+
+Started POST "/bugs" for 127.0.0.1 at 2019-03-05 03:09:52 +0100
+Processing by BugsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XLs676A3L9Pb8k4Arjq4Pghvme/0N8GE3u7obgCv8081/BdM4Ta17yb4lk/QUFc99ZcmqVsb2CGHYmnoqSQlMQ==", "bug"=>{"title"=>"New Bug", "description"=>"Yayy", "severity"=>"MEDIUM", "state"=>"open"}, "commit"=>"Add a bug"}
+  [1m[36mUser Load (8.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Unpermitted parameter: :severity
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:19
+  [1m[36mBug Create (1.3ms)[0m  [1m[32mINSERT INTO "bugs" ("title", "description", "state", "created_at", "updated_at", "user_id", "owner_bug") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "New Bug"], ["description", "Yayy"], ["state", "open"], ["created_at", "2019-03-05 02:09:52.677068"], ["updated_at", "2019-03-05 02:09:52.677068"], ["user_id", 1], ["owner_bug", "emna"]]
+  ↳ app/controllers/bugs_controller.rb:19
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:19
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:09:52 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (1.7ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (12.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (22.6ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+Completed 200 OK in 173ms (Views: 163.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:10:12 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (27.3ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `severity_ordered' for #<Bug:0x00007fb53f7e9540>
+Did you mean?  severity?):
+    28:                    <td><%= bug.state %></td>
+    29:                    <td><%= bug.owner_bug %></td>
+    30:                    <td><%= bug.others.username %></td>
+    31:                    <td><%= bug.severity_ordered %></td>
+    32:                    <td><%= link_to "Change user assignement", edit_bug_path(bug.id) %></td>
+    33:                 <% end %>
+    34:                 </tr>
+  
+app/views/bugs/index.html.erb:31:in `block in _app_views_bugs_index_html_erb__1952117328487317698_70208224384440'
+app/views/bugs/index.html.erb:24:in `_app_views_bugs_index_html_erb__1952117328487317698_70208224384440'
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:11:32 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.6ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (89.1ms)
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 13.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `severity_ordered' for #<Bug:0x00007fb544ac81a8>
+Did you mean?  severity?):
+    28:                    <td><%= bug.state %></td>
+    29:                    <td><%= bug.owner_bug %></td>
+    30:                    <td><%= bug.others.username %></td>
+    31:                    <td><%= bug.severity_ordered %></td>
+    32:                    <td><%= link_to "Change user assignement", edit_bug_path(bug.id) %></td>
+    33:                 <% end %>
+    34:                 </tr>
+  
+app/views/bugs/index.html.erb:31:in `block in _app_views_bugs_index_html_erb__1952117328487317698_70208259154680'
+app/views/bugs/index.html.erb:24:in `_app_views_bugs_index_html_erb__1952117328487317698_70208259154680'
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:11:46 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.9ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (48.0ms)
+  [1m[36mUser Load (10.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (25.5ms)
+  Rendered shared/_flashes.html.erb (1.0ms)
+Completed 200 OK in 261ms (Views: 236.6ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/bugs/2/edit" for 127.0.0.1 at 2019-03-05 03:11:50 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (25.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (2.1ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (11.3ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+Completed 200 OK in 156ms (Views: 103.4ms | ActiveRecord: 38.7ms)
+
+
+Started PATCH "/bugs/2" for 127.0.0.1 at 2019-03-05 03:11:54 +0100
+Processing by BugsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uzpIWhUVm91b2sc4NS88D6IbSAJHZy313rgnjyvQ7tEaL8gj1Q9Mk28oszMAmWZeiaO4Y+xJct7YznTbxHvCiQ==", "bug"=>{"user_id"=>"1", "state"=>"open", "severity"=>"HIGH"}, "commit"=>"Edit a bug", "id"=>"2"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.6ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:30
+Unpermitted parameter: :severity
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:31
+Redirected to http://localhost:3000/
+Completed 302 Found in 22ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:11:54 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.8ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (12.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (3.7ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+Completed 200 OK in 120ms (Views: 111.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/bugs/2/edit" for 127.0.0.1 at 2019-03-05 03:12:39 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (13.8ms)
+  Rendered shared/_navbar.html.erb (3.0ms)
+  Rendered shared/_flashes.html.erb (0.9ms)
+Completed 200 OK in 281ms (Views: 169.4ms | ActiveRecord: 45.8ms)
+
+
+Started PATCH "/bugs/2" for 127.0.0.1 at 2019-03-05 03:12:45 +0100
+Processing by BugsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K4QrwjCz5BxZ8kbp1B8AqLXRagTyIyDizYgH7IhUS1GKkau78KkzUm0AMuLhqVr5nmmaZVkNf8nL/lS4Z/9nCQ==", "bug"=>{"user_id"=>"2", "state"=>"open", "severity"=>"HIGH"}, "commit"=>"Edit a bug", "id"=>"2"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mBug Update (24.8ms)[0m  [1m[33mUPDATE "bugs" SET "user_id" = $1, "severity" = $2, "updated_at" = $3 WHERE "bugs"."id" = $4[0m  [["user_id", 2], ["severity", "HIGH"], ["updated_at", "2019-03-05 02:12:45.718377"], ["id", 2]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:31
+Redirected to http://localhost:3000/
+Completed 302 Found in 56ms (ActiveRecord: 30.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:12:45 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.5ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (12.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (3.7ms)
+  Rendered shared/_flashes.html.erb (0.9ms)
+Completed 200 OK in 133ms (Views: 124.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/bugs/3/edit" for 127.0.0.1 at 2019-03-05 03:12:52 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (9.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (1.1ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (10.6ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_flashes.html.erb (1.0ms)
+Completed 200 OK in 204ms (Views: 167.4ms | ActiveRecord: 11.4ms)
+
+
+Started PATCH "/bugs/3" for 127.0.0.1 at 2019-03-05 03:12:58 +0100
+Processing by BugsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tUUef6wzEqiI2IVEavhr9WMvH6wUC5WN6aEqr7Z1yp9jgJotYYdffhiSQVt/bDUYp6HVwAadZu5hLtmcjk4KOg==", "bug"=>{"user_id"=>"1", "state"=>"open", "severity"=>"MEDIUM"}, "commit"=>"Edit a bug", "id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mBug Update (2.5ms)[0m  [1m[33mUPDATE "bugs" SET "user_id" = $1, "severity" = $2, "updated_at" = $3 WHERE "bugs"."id" = $4[0m  [["user_id", 1], ["severity", "MEDIUM"], ["updated_at", "2019-03-05 02:12:58.922674"], ["id", 3]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:31
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:12:58 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (11.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (6.6ms)
+  Rendered shared/_flashes.html.erb (0.8ms)
+Completed 200 OK in 130ms (Views: 122.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/bugs/5/edit" for 127.0.0.1 at 2019-03-05 03:13:01 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.3ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (6.7ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+Completed 200 OK in 113ms (Views: 100.3ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/bugs/5" for 127.0.0.1 at 2019-03-05 03:13:06 +0100
+Processing by BugsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JdUKQEYjleYRvD6tBuxvxqpC86nXjEC+Tcw/rk3TEaX1I0f2PK2cDxWlJg1MiGysZi0F7z8nIpGVKd5arz+ABA==", "bug"=>{"user_id"=>"1", "state"=>"open", "severity"=>"LOW"}, "commit"=>"Edit a bug", "id"=>"5"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mBug Update (0.7ms)[0m  [1m[33mUPDATE "bugs" SET "severity" = $1, "updated_at" = $2 WHERE "bugs"."id" = $3[0m  [["severity", "LOW"], ["updated_at", "2019-03-05 02:13:06.251669"], ["id", 5]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:31
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:13:06 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (12.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+Completed 200 OK in 115ms (Views: 110.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/bugs/4/edit" for 127.0.0.1 at 2019-03-05 03:13:08 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (5.7ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+Completed 200 OK in 102ms (Views: 86.7ms | ActiveRecord: 2.9ms)
+
+
+Started PATCH "/bugs/4" for 127.0.0.1 at 2019-03-05 03:13:11 +0100
+Processing by BugsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R2NxMdcBGrcW1agqzxEJs94gNdq0CsNma+MduaD5lvc2ZrwhcYggrT2XTehUF1aZ7R4bWLCKyQXObMw8rGcEqw==", "bug"=>{"user_id"=>"1", "state"=>"open", "severity"=>"HIGH"}, "commit"=>"Edit a bug", "id"=>"4"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.5ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mBug Update (0.6ms)[0m  [1m[33mUPDATE "bugs" SET "severity" = $1, "updated_at" = $2 WHERE "bugs"."id" = $3[0m  [["severity", "HIGH"], ["updated_at", "2019-03-05 02:13:11.716135"], ["id", 4]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:31
+Redirected to http://localhost:3000/
+Completed 302 Found in 33ms (ActiveRecord: 10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:13:11 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (13.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (7.8ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+Completed 200 OK in 142ms (Views: 134.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/bugs/1/edit" for 127.0.0.1 at 2019-03-05 03:13:16 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.3ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (13.5ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+Completed 200 OK in 122ms (Views: 106.0ms | ActiveRecord: 7.1ms)
+
+
+Started PATCH "/bugs/1" for 127.0.0.1 at 2019-03-05 03:13:20 +0100
+Processing by BugsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GQXaMgTU4DqmIv6ymYFtozhAbyiLw96cH2Eo2mFKgOnIYGejQ3t1tuhlrKeim6JiAXljaYrI8gLpJZpcnDSgnw==", "bug"=>{"user_id"=>"2", "state"=>"open", "severity"=>"HIGH"}, "commit"=>"Edit a bug", "id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.3ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mBug Update (1.8ms)[0m  [1m[33mUPDATE "bugs" SET "severity" = $1, "updated_at" = $2 WHERE "bugs"."id" = $3[0m  [["severity", "HIGH"], ["updated_at", "2019-03-05 02:13:20.406921"], ["id", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:31
+Redirected to http://localhost:3000/
+Completed 302 Found in 24ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:13:20 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (51.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (3.5ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+Completed 200 OK in 157ms (Views: 150.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/bugs/2/edit" for 127.0.0.1 at 2019-03-05 03:13:41 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (2.5ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (6.8ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+Completed 200 OK in 175ms (Views: 158.4ms | ActiveRecord: 4.9ms)
+
+
+Started PATCH "/bugs/2" for 127.0.0.1 at 2019-03-05 03:13:44 +0100
+Processing by BugsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ktk4VCLF07QyiYMNuhuPqUW5RL6ZP00p3iuwOir9VvSLzLgt4t8E+gZ79waPrdX4bgG03zIREgLYXeNuxVZ6rA==", "bug"=>{"user_id"=>"2", "state"=>"open", "severity"=>"LOW"}, "commit"=>"Edit a bug", "id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mBug Update (0.5ms)[0m  [1m[33mUPDATE "bugs" SET "severity" = $1, "updated_at" = $2 WHERE "bugs"."id" = $3[0m  [["severity", "LOW"], ["updated_at", "2019-03-05 02:13:44.496481"], ["id", 2]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:31
+Redirected to http://localhost:3000/
+Completed 302 Found in 26ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:13:44 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.7ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (13.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (6.1ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+Completed 200 OK in 122ms (Views: 115.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/bugs/3/edit" for 127.0.0.1 at 2019-03-05 03:13:50 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (16.5ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+Completed 200 OK in 113ms (Views: 101.3ms | ActiveRecord: 3.8ms)
+
+
+Started PATCH "/bugs/3" for 127.0.0.1 at 2019-03-05 03:13:53 +0100
+Processing by BugsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3s7sUAjO2Z49MnDoMqTML5UdeQY4ErDdz5NzZl1x/V0IC2gCxXqUSK14tPcnMJLCUZOzaiqEQ75HHIBVZUo9+A==", "bug"=>{"user_id"=>"1", "state"=>"open", "severity"=>"LOW"}, "commit"=>"Edit a bug", "id"=>"3"}
+  [1m[36mUser Load (7.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.6ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mBug Update (0.6ms)[0m  [1m[33mUPDATE "bugs" SET "severity" = $1, "updated_at" = $2 WHERE "bugs"."id" = $3[0m  [["severity", "LOW"], ["updated_at", "2019-03-05 02:13:53.841196"], ["id", 3]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[35m (10.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:31
+Redirected to http://localhost:3000/
+Completed 302 Found in 32ms (ActiveRecord: 19.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:13:53 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (8.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (3.2ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+Completed 200 OK in 125ms (Views: 119.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/bugs/5/edit" for 127.0.0.1 at 2019-03-05 03:13:56 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.3ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (7.8ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+Completed 200 OK in 130ms (Views: 122.8ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/bugs/5" for 127.0.0.1 at 2019-03-05 03:14:00 +0100
+Processing by BugsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i3Dd/Y0hwKKf9yWPmm3oD3HkraRBkMiQE0JsXOtwi6ZbhpBL96/JS5vuPS/QCetlvYtb4qk7qr/Lp42oCZwaBw==", "bug"=>{"user_id"=>"1", "state"=>"open", "severity"=>"Other"}, "commit"=>"Edit a bug", "id"=>"5"}
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (1.7ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mBug Update (4.6ms)[0m  [1m[33mUPDATE "bugs" SET "severity" = $1, "updated_at" = $2 WHERE "bugs"."id" = $3[0m  [["severity", "Other"], ["updated_at", "2019-03-05 02:14:00.667886"], ["id", 5]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:31
+Redirected to http://localhost:3000/
+Completed 302 Found in 56ms (ActiveRecord: 14.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:14:00 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.5ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:30
+  Rendered bugs/index.html.erb within layouts/application (19.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (4.8ms)
+  Rendered shared/_flashes.html.erb (2.3ms)
+Completed 200 OK in 144ms (Views: 136.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:19:02 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  Rendered bugs/index.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/guellaty/code/emnaguel/study-test/app/views/bugs/index.html.erb:71: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/bugs/index.html.erb:71: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:19:19 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (1.4ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  Rendered bugs/index.html.erb within layouts/application (28.9ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (7.5ms)
+  Rendered shared/_flashes.html.erb (1.2ms)
+Completed 200 OK in 234ms (Views: 221.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/bugs/new" for 127.0.0.1 at 2019-03-05 03:19:52 +0100
+Processing by BugsController#new as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering bugs/new.html.erb within layouts/application
+  Rendered bugs/new.html.erb within layouts/application (84.7ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_flashes.html.erb (0.9ms)
+Completed 200 OK in 317ms (Views: 264.8ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/bugs" for 127.0.0.1 at 2019-03-05 03:20:03 +0100
+Processing by BugsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fO0JC1sGLH5J4q/RDPKyGxSWXUHsML1M6nk7g/4LtpwVqiSoGge2QrTod55ymF0Y6W7iB0McpOmz9boFV4Bg4g==", "bug"=>{"title"=>"New Bug", "description"=>"Yayy", "severity"=>"HIGH", "state"=>"assigned"}, "commit"=>"Add a bug"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:19
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:19
+  [1m[36mBug Create (36.4ms)[0m  [1m[32mINSERT INTO "bugs" ("title", "description", "state", "created_at", "updated_at", "user_id", "owner_bug", "severity") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "New Bug"], ["description", "Yayy"], ["state", "assigned"], ["created_at", "2019-03-05 02:20:03.182978"], ["updated_at", "2019-03-05 02:20:03.182978"], ["user_id", 1], ["owner_bug", "emna"], ["severity", "HIGH"]]
+  ↳ app/controllers/bugs_controller.rb:19
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:19
+Redirected to http://localhost:3000/
+Completed 302 Found in 75ms (ActiveRecord: 40.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:20:03 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.8ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:41
+  Rendered bugs/index.html.erb within layouts/application (56.9ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (5.4ms)
+  Rendered shared/_flashes.html.erb (0.9ms)
+Completed 200 OK in 193ms (Views: 181.7ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/bugs/new" for 127.0.0.1 at 2019-03-05 03:20:06 +0100
+Processing by BugsController#new as HTML
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering bugs/new.html.erb within layouts/application
+  Rendered bugs/new.html.erb within layouts/application (18.7ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_flashes.html.erb (1.0ms)
+Completed 200 OK in 131ms (Views: 115.6ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/bugs" for 127.0.0.1 at 2019-03-05 03:20:14 +0100
+Processing by BugsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"90/sAAjTzC445LHWHqOyiLGapnodytjPJc6DywFQsCWeCMGjSdJWEsXuaZlgyV2LTGIZPLLmwWp8QgJNqNtmWw==", "bug"=>{"title"=>"Newnew", "description"=>"Yayy", "severity"=>"MEDIUM", "state"=>"closed"}, "commit"=>"Add a bug"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:19
+  [1m[36mBug Create (1.2ms)[0m  [1m[32mINSERT INTO "bugs" ("title", "description", "state", "created_at", "updated_at", "user_id", "owner_bug", "severity") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Newnew"], ["description", "Yayy"], ["state", "closed"], ["created_at", "2019-03-05 02:20:15.001598"], ["updated_at", "2019-03-05 02:20:15.001598"], ["user_id", 1], ["owner_bug", "emna"], ["severity", "MEDIUM"]]
+  ↳ app/controllers/bugs_controller.rb:19
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:19
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:20:15 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.6ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:41
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:51
+  Rendered bugs/index.html.erb within layouts/application (17.2ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (5.3ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+Completed 200 OK in 160ms (Views: 149.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/bugs/4/edit" for 127.0.0.1 at 2019-03-05 03:20:25 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.5ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (28.1ms)
+  Rendered shared/_navbar.html.erb (11.0ms)
+  Rendered shared/_flashes.html.erb (1.2ms)
+Completed 200 OK in 238ms (Views: 196.9ms | ActiveRecord: 6.3ms)
+
+
+Started PATCH "/bugs/4" for 127.0.0.1 at 2019-03-05 03:20:40 +0100
+Processing by BugsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VbP+zQTWTIYvtLvr1oRa+dxIzLnZK3c+U5ECEEk6ODYktjPdol92nAT2XilNggXT73biO92rfV32HtOVRaSqag==", "bug"=>{"user_id"=>"1", "state"=>"open", "severity"=>"HIGH"}, "commit"=>"Edit a bug", "id"=>"4"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (1.2ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:30
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:31
+Redirected to http://localhost:3000/
+Completed 302 Found in 43ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:20:41 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.6ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:41
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:51
+  Rendered bugs/index.html.erb within layouts/application (17.4ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (5.9ms)
+  Rendered shared/_flashes.html.erb (1.2ms)
+Completed 200 OK in 165ms (Views: 150.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:21:03 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.6ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:41
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:51
+  Rendered bugs/index.html.erb within layouts/application (23.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (5.9ms)
+  Rendered shared/_flashes.html.erb (1.0ms)
+Completed 200 OK in 163ms (Views: 147.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:24:29 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (7.7ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:41
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:41
+  Rendered bugs/index.html.erb within layouts/application (61.8ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (8.0ms)
+  Rendered shared/_flashes.html.erb (0.8ms)
+Completed 200 OK in 7416ms (Views: 7373.8ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:24:55 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (1.1ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:41
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:41
+  Rendered bugs/index.html.erb within layouts/application (45.2ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (6.6ms)
+  Rendered shared/_flashes.html.erb (1.7ms)
+Completed 200 OK in 185ms (Views: 164.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:25:36 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.5ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:41
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:41
+  Rendered bugs/index.html.erb within layouts/application (17.4ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (8.9ms)
+  Rendered shared/_flashes.html.erb (0.9ms)
+Completed 200 OK in 6660ms (Views: 6650.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:30:32 +0100
+Processing by BugsController#index as HTML
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (1.0ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs"[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  Rendered bugs/index.html.erb within layouts/application (173.4ms)
+Completed 500 Internal Server Error in 242ms (ActiveRecord: 83.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `severity_ordered' for #<Bug:0x00007fb53f749950>
+Did you mean?  severity?):
+    29:                    <td><%= bug.state %></td>
+    30:                    <td><%= bug.owner_bug %></td>
+    31:                    <td><%= bug.others.username %></td>
+    32:                    <td><%= bug.severity_ordered %></td>
+    33:                    <td><%= link_to "Edit", edit_bug_path(bug.id) %></td>
+    34:                   </tr>
+    35:                    <% elsif bug.state %>
+  
+app/views/bugs/index.html.erb:32:in `block in _app_views_bugs_index_html_erb__1952117328487317698_70208172641560'
+app/views/bugs/index.html.erb:24:in `_app_views_bugs_index_html_erb__1952117328487317698_70208172641560'
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:32:54 +0100
+Processing by BugsController#index as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <class:Bug> at /Users/guellaty/code/emnaguel/study-test/app/models/bug.rb:4)
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (29.9ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs" ORDER BY CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:40
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:40
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  Rendered bugs/index.html.erb within layouts/application (105.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (5.9ms)
+  Rendered shared/_flashes.html.erb (1.0ms)
+Completed 200 OK in 380ms (Views: 271.8ms | ActiveRecord: 45.0ms)
+
+
+Started GET "/bugs/7/edit" for 127.0.0.1 at 2019-03-05 03:33:04 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.8ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (18.4ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_flashes.html.erb (1.5ms)
+Completed 200 OK in 135ms (Views: 116.1ms | ActiveRecord: 1.9ms)
+
+
+Started PATCH "/bugs/7" for 127.0.0.1 at 2019-03-05 03:33:12 +0100
+Processing by BugsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CfYhwcw2SZnwzgv4K08j5KUVavO8e4tLmLhzCgBI4ionFSdRQSkQ4nwVRXG9e0pjWDsKvd2v57aV7nRGfduYIA==", "bug"=>{"user_id"=>"1", "state"=>"open", "severity"=>"HIGH"}, "commit"=>"Edit a bug", "id"=>"7"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.6ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:30
+  [1m[35m (9.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mBug Update (9.6ms)[0m  [1m[33mUPDATE "bugs" SET "state" = $1, "severity" = $2, "updated_at" = $3 WHERE "bugs"."id" = $4[0m  [["state", "open"], ["severity", "HIGH"], ["updated_at", "2019-03-05 02:33:12.089481"], ["id", 7]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:31
+Redirected to http://localhost:3000/
+Completed 302 Found in 46ms (ActiveRecord: 22.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:33:12 +0100
+Processing by BugsController#index as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <class:Bug> at /Users/guellaty/code/emnaguel/study-test/app/models/bug.rb:4)
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (1.4ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs" ORDER BY CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:40
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  Rendered bugs/index.html.erb within layouts/application (15.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (4.7ms)
+  Rendered shared/_flashes.html.erb (0.8ms)
+Completed 200 OK in 122ms (Views: 112.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/bugs/1/edit" for 127.0.0.1 at 2019-03-05 03:33:18 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.3ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (10.5ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+Completed 200 OK in 132ms (Views: 118.6ms | ActiveRecord: 2.4ms)
+
+
+Started PATCH "/bugs/1" for 127.0.0.1 at 2019-03-05 03:33:22 +0100
+Processing by BugsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7R+TR/FEajKryZZ2L+uw1TJDXgJVoBczm7yJ2x6YZkU8ei7Wtuv/vuWOxGMU8X8UC3pSQ1SrO61t+Dtd4+ZGMw==", "bug"=>{"user_id"=>"1", "state"=>"open", "severity"=>"HIGH"}, "commit"=>"Edit a bug", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.3ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mBug Update (10.7ms)[0m  [1m[33mUPDATE "bugs" SET "user_id" = $1, "updated_at" = $2 WHERE "bugs"."id" = $3[0m  [["user_id", 1], ["updated_at", "2019-03-05 02:33:22.705512"], ["id", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:31
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:33:22 +0100
+Processing by BugsController#index as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <class:Bug> at /Users/guellaty/code/emnaguel/study-test/app/models/bug.rb:4)
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.6ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs" ORDER BY CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:40
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  Rendered bugs/index.html.erb within layouts/application (16.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (4.6ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+Completed 200 OK in 154ms (Views: 147.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/bugs/4/edit" for 127.0.0.1 at 2019-03-05 03:33:25 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (1.1ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (9.7ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+Completed 200 OK in 119ms (Views: 104.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:33:28 +0100
+Processing by BugsController#index as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <class:Bug> at /Users/guellaty/code/emnaguel/study-test/app/models/bug.rb:4)
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.7ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs" ORDER BY CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:40
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  Rendered bugs/index.html.erb within layouts/application (19.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (3.7ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+Completed 200 OK in 128ms (Views: 119.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:33:28 +0100
+Processing by BugsController#index as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <class:Bug> at /Users/guellaty/code/emnaguel/study-test/app/models/bug.rb:4)
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (10.2ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs" ORDER BY CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (12.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:40
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  Rendered bugs/index.html.erb within layouts/application (46.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (3.9ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+Completed 200 OK in 177ms (Views: 146.1ms | ActiveRecord: 23.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:33:48 +0100
+Processing by BugsController#index as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <class:Bug> at /Users/guellaty/code/emnaguel/study-test/app/models/bug.rb:4)
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.8ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs" ORDER BY CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:41
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  Rendered bugs/index.html.erb within layouts/application (73.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (7.0ms)
+  Rendered shared/_flashes.html.erb (1.3ms)
+Completed 200 OK in 210ms (Views: 199.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/bugs/2/edit" for 127.0.0.1 at 2019-03-05 03:34:02 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.8ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (14.1ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+Completed 200 OK in 182ms (Views: 168.4ms | ActiveRecord: 4.3ms)
+
+
+Started PATCH "/bugs/2" for 127.0.0.1 at 2019-03-05 03:34:06 +0100
+Processing by BugsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PL6R7iiW5fuEXkB3FFQf14igRqMljQ/mCOEcjmCO+EedqxGX6IwytbCsNHwh4kWGoxi2wo6jUM0Ol0/ajyXUHw==", "bug"=>{"user_id"=>"2", "state"=>"open", "severity"=>"MEDIUM"}, "commit"=>"Edit a bug", "id"=>"2"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.4ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mBug Update (0.8ms)[0m  [1m[33mUPDATE "bugs" SET "severity" = $1, "updated_at" = $2 WHERE "bugs"."id" = $3[0m  [["severity", "MEDIUM"], ["updated_at", "2019-03-05 02:34:06.647521"], ["id", 2]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:31
+Redirected to http://localhost:3000/
+Completed 302 Found in 22ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:34:06 +0100
+Processing by BugsController#index as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <class:Bug> at /Users/guellaty/code/emnaguel/study-test/app/models/bug.rb:4)
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.6ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs" ORDER BY CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:41
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  Rendered bugs/index.html.erb within layouts/application (13.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (5.1ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+Completed 200 OK in 114ms (Views: 107.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/bugs/6/edit" for 127.0.0.1 at 2019-03-05 03:34:09 +0100
+Processing by BugsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (1.8ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:24
+  Rendering bugs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/bugs/edit.html.erb:9
+  Rendered bugs/edit.html.erb within layouts/application (7.7ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+Completed 200 OK in 120ms (Views: 105.9ms | ActiveRecord: 2.9ms)
+
+
+Started PATCH "/bugs/6" for 127.0.0.1 at 2019-03-05 03:34:12 +0100
+Processing by BugsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7aN1XVSAfWq8oZuHbwg7waf/2dXDZDHN0H6e6ihAGleOT4WFohPZ05CitwyxSs7FljuMV8X9VSBsxXfL7yZsEA==", "bug"=>{"user_id"=>"1", "state"=>"assigned", "severity"=>"MEDIUM"}, "commit"=>"Edit a bug", "id"=>"6"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/guellaty/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBug Load (0.3ms)[0m  [1m[34mSELECT  "bugs".* FROM "bugs" WHERE "bugs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[36mBug Update (0.7ms)[0m  [1m[33mUPDATE "bugs" SET "severity" = $1, "updated_at" = $2 WHERE "bugs"."id" = $3[0m  [["severity", "MEDIUM"], ["updated_at", "2019-03-05 02:34:12.542076"], ["id", 6]]
+  ↳ app/controllers/bugs_controller.rb:31
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bugs_controller.rb:31
+Redirected to http://localhost:3000/
+Completed 302 Found in 20ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:34:12 +0100
+Processing by BugsController#index as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <class:Bug> at /Users/guellaty/code/emnaguel/study-test/app/models/bug.rb:4)
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (0.6ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs" ORDER BY CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:41
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  Rendered bugs/index.html.erb within layouts/application (16.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (5.1ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+Completed 200 OK in 118ms (Views: 111.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:36:35 +0100
+Processing by BugsController#index as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <class:Bug> at /Users/guellaty/code/emnaguel/study-test/app/models/bug.rb:4)
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (1.6ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs" ORDER BY CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC[0m
+  ↳ app/views/bugs/index.html.erb:24
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:41
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:31
+  Rendered bugs/index.html.erb within layouts/application (56.9ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (9.0ms)
+  Rendered shared/_flashes.html.erb (1.3ms)
+Completed 200 OK in 6586ms (Views: 6553.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-05 03:37:36 +0100
+Processing by BugsController#index as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <class:Bug> at /Users/guellaty/code/emnaguel/study-test/app/models/bug.rb:4)
+  Rendering bugs/index.html.erb within layouts/application
+  [1m[36mBug Load (1.2ms)[0m  [1m[34mSELECT "bugs".* FROM "bugs" ORDER BY CASE bugs.severity WHEN 'HIGH' THEN 'a' WHEN 'MEDIUM' THEN 'b' WHEN 'LOW' THEN 'c' ELSE 'z' END ASC, id ASC[0m
+  ↳ app/views/bugs/index.html.erb:25
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:33
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bugs/index.html.erb:33
+  Rendered bugs/index.html.erb within layouts/application (24.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:9
+  Rendered shared/_navbar.html.erb (11.8ms)
+  Rendered shared/_flashes.html.erb (1.1ms)
+Completed 200 OK in 254ms (Views: 232.9ms | ActiveRecord: 3.3ms)
+
+

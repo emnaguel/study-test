@@ -7,13 +7,14 @@
         <%= simple_form_for [@user, @bug] do |f| %>
           <div class="form-inputs">
             <%= f.collection_select(:user_id, @users, :id, :username, :prompt => "User Assignement" ) %>
-            <%= f.input_field :state, label: false, type: "text", collection: Bug::STATES, :prompt => "Statut du bug"  %>
+            <%= f.input_field :state, label: false, type: "text", collection: Bug::STATES, :prompt => "Bug State"  %>
+            <%= f.input_field :severity, label: false, type: "text", collection: Bug::SEVERITIES, :prompt => "Bug Severity"    %>
           </div>
           <div class="form-actions">
             <%= f.submit "Edit a bug", class: "btn btn-primary" %>
           </div>
         <% end %>
       </div>
-    </div><
+    </div>
   </div>
 </div>

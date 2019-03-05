@@ -2,7 +2,7 @@ class BugsController < ApplicationController
   skip_before_action :authenticate_user!, only: :index
 
   def index
-    @bugs = Bug.all
+    @bugs = Bug.severity_ordered
 
   end
 
@@ -37,7 +37,7 @@ class BugsController < ApplicationController
     def bug_params
       # *Strong params*: You need to *whitelist* what can be updated by the user
       # Never trust user data!
-      params.require(:bug).permit(:title, :description, :state, :user_id, :owner_bug)
+      params.require(:bug).permit(:title, :description, :state, :user_id, :owner_bug, :severity)
     end
 
 
