@@ -1,17 +1,22 @@
 class User < ApplicationRecord
   attr_writer :login
+  has_many :bugs
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
   :recoverable, :rememberable # :validatable
   validates_uniqueness_of :email, allow_blank: true
+
   validates :username, presence: :true, uniqueness: { case_sensitive: false }
   validates_format_of :username, with: /^[a-zA-Z0-9_\.]*$/, :multiline => true
   validates_presence_of     :password
   validates_confirmation_of :password
 
+  USERTYPE = ['owner', 'others']
+
   def login
-    @login || self.username || self.email
+    @login || self.username
   end
 
   def self.find_for_database_authentication(warden_conditions)
@@ -21,6 +26,15 @@ class User < ApplicationRecord
     elsif conditions.has_key?(:username) || conditions.has_key?(:email)
       where(conditions.to_h).first
     end
+  end
+
+
+  def email_required?
+    false
+  end
+
+  def email_changed?
+    false
   end
 end
 

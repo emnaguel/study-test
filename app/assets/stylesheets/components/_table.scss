@@ -1,0 +1,14 @@
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: white;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: none;
+}
+
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: none;
+}
